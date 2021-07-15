@@ -42,21 +42,36 @@ public class DocumentManagement {
     }
 
     public void show() {
-        System.out.println("thong tin sach");
-        for (int i = 0; i < arrbook.size(); i++) {
-            System.out.println(arrbook.get(i));
-        }
-
-        System.out.println("thong tin tap chi");
-        for (int i = 0; i < arrmagazine.size(); i++) {
-            System.out.println(arrmagazine.get(i));
-        }
-
-        System.out.println("thong tin bao");
-        for (int i = 0; i < arrjournal.size(); i++) {
-            System.out.println(arrjournal.get(i));
+        System.out.println("nhập số bạn muốn chọn: " );
+        int number=scanner.nextInt();
+        switch (number){
+            case 1:
+            System.out.println("thong tin sach");
+            for (int i = 0; i < arrbook.size(); i++) 
+            {
+                System.out.println(arrbook.get(i).toString());
+            }
+            break;
+            case 2:
+            System.out.println("thong tin tap chi");
+            for (int i = 0; i < arrmagazine.size(); i++) 
+            {
+                System.out.println(arrmagazine.get(i).toString());
+            }
+            break;
+            case 3:
+            System.out.println("thong tin bao");
+            for (int i = 0; i < arrjournal.size(); i++) 
+            {
+                System.out.println(arrjournal.get(i).toString());
+            }
+            break;
+            default:
+            System.out.println("nhập lại");
+            break;
         }
     }
+
 
     public void delete(){
         System.out.println("nhap ma tai lieu muon xoa: ");
