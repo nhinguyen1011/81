@@ -44,17 +44,17 @@ public class DocumentManagement {
     public void show() {
         System.out.println("thong tin sach");
         for (int i = 0; i < arrbook.size(); i++) {
-            System.out.println(arrbook.get(i).toString());
+            System.out.println(arrbook.get(i));
         }
 
         System.out.println("thong tin tap chi");
         for (int i = 0; i < arrmagazine.size(); i++) {
-            System.out.println(arrmagazine.get(i).toString());
+            System.out.println(arrmagazine.get(i));
         }
 
         System.out.println("thong tin bao");
         for (int i = 0; i < arrjournal.size(); i++) {
-            System.out.println(arrjournal.get(i).toString());
+            System.out.println(arrjournal.get(i));
         }
     }
 
@@ -65,9 +65,9 @@ public class DocumentManagement {
         System.out.println("xoa thong tin sach");
         for (int i = 0; i < documents.size(); i++) {
             if(documents.get(i).getId()==reid){
-                System.out.println(arrbook.remove(i).toString());
-                System.out.println(arrmagazine.remove(i).toString());
-                System.out.println(arrjournal.remove(i).toString());
+                System.out.println(arrbook.remove(i));
+                System.out.println(arrmagazine.remove(i));
+                System.out.println(arrjournal.remove(i));
             }
         }
     }
@@ -79,9 +79,9 @@ public class DocumentManagement {
         System.out.println("the loai ban muon tim");
         for (int i = 0; i < documents.size(); i++) {
             if(documents.get(i).toString()==kind){
-                System.out.println(arrbook.get(i).toString());
-                System.out.println(arrmagazine.get(i).toString());
-                System.out.println(arrjournal.get(i).toString());
+                System.out.println(arrbook.get(i));
+                System.out.println(arrmagazine.get(i));
+                System.out.println(arrjournal.get(i));
             }
         }
     }
