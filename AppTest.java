@@ -5,7 +5,7 @@ public class AppTest {
         int choiceNumber;
         DocumentManagement documentManagement = new DocumentManagement();
         Scanner scanner = new Scanner(System.in);
-
+        boolean choice = true;
         System.out.println("1:Thêm mới tài liệu");
         System.out.println("2:Hiển thị thông tin về tài liệu");
         System.out.println("3:Xoá tài liệu theo mã tài liệu");
@@ -13,6 +13,7 @@ public class AppTest {
         System.out.println("5:Thoát khỏi chương trình");
         System.out.println("Bấm số để chọn (1/2/3/4/5): ");
         choiceNumber = scanner.nextInt();
+        while (choice) {
             switch (choiceNumber) {
                 case 1:
                     System.out.println("Bạn chọn chức năng thêm!");
@@ -34,13 +35,13 @@ public class AppTest {
                     System.out.println("Bạn chọn chức năng thoát");
                     documentManagement.exit();
                     break;
-                default
-                    System.out.println("Nhập lại chức năng");
+                default:
+                    System.out.println("Nhập lại chức năng");    
                     break;
             }
         }
-
-
+    }
 }
+
 
 
