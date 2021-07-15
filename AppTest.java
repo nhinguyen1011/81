@@ -11,12 +11,8 @@ public class AppTest {
         System.out.println("3:Xoá tài liệu theo mã tài liệu");
         System.out.println("4:Tìm kiếm tài liệu theo thể loại");
         System.out.println("5:Thoát khỏi chương trình");
-
-            do {
-                System.out.println("Bấm số để chọn (1/2/3/4/5): ");
-                choiceNumber = scanner.nextInt();
-            } while ((choiceNumber < 1) || (choiceNumber > 5));
-
+        System.out.println("Bấm số để chọn (1/2/3/4/5): ");
+        choiceNumber = scanner.nextInt();
             switch (choiceNumber) {
                 case 1:
                     System.out.println("Bạn chọn chức năng thêm!");
@@ -37,6 +33,9 @@ public class AppTest {
                 case 5:
                     System.out.println("Bạn chọn chức năng thoát");
                     documentManagement.exit();
+                    break;
+                default
+                    System.out.println("Nhập lại chức năng");
                     break;
             }
         }
